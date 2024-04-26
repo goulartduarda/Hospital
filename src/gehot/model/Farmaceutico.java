@@ -10,8 +10,8 @@ public class Farmaceutico extends Pessoa {
     private String senha;
     private String nomeSocial;
 
-    public Farmaceutico(String crf, String login, String senha, String nomeSocial, int id, String nome, String fone, String email, String cpfCnpj, Date dataCadastro) {
-        super(id, nome, fone, email, cpfCnpj, dataCadastro);
+    public Farmaceutico(String crf, String login, String senha, String nomeSocial, int id, String nome, String fone, String fone1, String email, String cpfCnpj, String rgInscricaoEstadual, Date dataCadastro, String cep, String cidade, String bairro, String logradouro, String complemento) {
+        super(id, nome, fone, fone1, email, cpfCnpj, rgInscricaoEstadual, dataCadastro, cep, cidade, bairro, logradouro, complemento);
         this.crf = crf;
         this.login = login;
         this.senha = senha;
@@ -49,5 +49,5 @@ public class Farmaceutico extends Pessoa {
     public void setNomeSocial(String nomeSocial) {
         this.nomeSocial = nomeSocial;
     }
-       
+          
 }

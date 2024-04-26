@@ -1,17 +1,20 @@
 
 package gehot.model;
 
-import java.util.Date;
 
-
-public class Fornecedor extends Pessoa {
+public class Laboratorio {
     private String nomeFantasia;
     private String contato;
+    private String status;
+    
+    public Laboratorio(){
+        
+    }
 
-    public Fornecedor(String nomeFantasia, String contato, int id, String nome, String fone, String fone1, String email, String cpfCnpj, String rgInscricaoEstadual, Date dataCadastro, String cep, String cidade, String bairro, String logradouro, String complemento) {
-        super(id, nome, fone, fone1, email, cpfCnpj, rgInscricaoEstadual, dataCadastro, cep, cidade, bairro, logradouro, complemento);
+    public Laboratorio(String nomeFantasia, String contato, String status) {
         this.nomeFantasia = nomeFantasia;
         this.contato = contato;
+        this.status = status;
     }
 
     public String getNomeFantasia() {
@@ -29,5 +32,13 @@ public class Fornecedor extends Pessoa {
     public void setContato(String contato) {
         this.contato = contato;
     }
-    
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+        
 }

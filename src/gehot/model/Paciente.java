@@ -10,14 +10,14 @@ public class Paciente extends Pessoa {
     
     //contrutor
 
-    public Paciente(String tipoSanguineo, String sexo, String nomeSocial, int id, String nome, String fone, String email, String cpfCnpj, Date dataCadastro) {
-        super(id, nome, fone, email, cpfCnpj, dataCadastro);
+    public Paciente(String tipoSanguineo, String sexo, String nomeSocial, int id, String nome, String fone, String fone1, String email, String cpfCnpj, String rgInscricaoEstadual, Date dataCadastro, String cep, String cidade, String bairro, String logradouro, String complemento) {
+        super(id, nome, fone, fone1, email, cpfCnpj, rgInscricaoEstadual, dataCadastro, cep, cidade, bairro, logradouro, complemento);
         this.tipoSanguineo = tipoSanguineo;
         this.sexo = sexo;
         this.nomeSocial = nomeSocial;
     }
     //metodos getters e setters 
-
+    
     public String getTipoSanguineo() {
         return tipoSanguineo;
     }
@@ -41,5 +41,5 @@ public class Paciente extends Pessoa {
     public void setNomeSocial(String nomeSocial) {
         this.nomeSocial = nomeSocial;
     }
-     
+    
 }
