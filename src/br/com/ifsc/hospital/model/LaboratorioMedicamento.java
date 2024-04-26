@@ -1,22 +1,20 @@
 
-package br.model;
-
-import java.time.LocalDateTime;
+package gehot.model;
 
 
-public class Receita {
+public class LaboratorioMedicamento {
     private Integer id;
-    private LocalDateTime dataHoraReceita;
+    private String codigoBarras;
     private String observacao;
     private String status;
     
-    public Receita(){
+    public LaboratorioMedicamento(){
         
     }
 
-    public Receita(Integer id, LocalDateTime dataHoraReceita, String observacao, String status) {
+    public LaboratorioMedicamento(Integer id, String codigoBarras, String observacao, String status) {
         this.id = id;
-        this.dataHoraReceita = dataHoraReceita;
+        this.codigoBarras = codigoBarras;
         this.observacao = observacao;
         this.status = status;
     }
@@ -29,12 +27,12 @@ public class Receita {
         this.id = id;
     }
 
-    public LocalDateTime getDataHoraReceita() {
-        return dataHoraReceita;
+    public String getCodigoBarras() {
+        return codigoBarras;
     }
 
-    public void setDataHoraReceita(LocalDateTime dataHoraReceita) {
-        this.dataHoraReceita = dataHoraReceita;
+    public void setCodigoBarras(String codigoBarras) {
+        this.codigoBarras = codigoBarras;
     }
 
     public String getObservacao() {
@@ -51,6 +49,5 @@ public class Receita {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-       
+    }   
 }

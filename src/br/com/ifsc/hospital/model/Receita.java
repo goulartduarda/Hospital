@@ -1,5 +1,5 @@
 
-package br.model;
+package gehot.model;
 
 import java.time.LocalDateTime;
 

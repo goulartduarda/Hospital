@@ -1,5 +1,5 @@
 
-package gehot.model;
+package br.model;
 
 
 public class LaboratorioMedicamento {

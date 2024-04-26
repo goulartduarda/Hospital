@@ -1,5 +1,5 @@
 
-package br.model;
+package gehot.model;
 
 
 public class Medicamento {

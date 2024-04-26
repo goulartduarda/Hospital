@@ -1,5 +1,5 @@
 
-package gehot.model;
+package br.model;
 
 import java.util.Date;
 
