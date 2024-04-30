@@ -9,18 +9,21 @@ public class ConsultaExame {
 	private String analiseExame;
 	private String imagemExame;
 	private String status;
+	private Consulta consulta;
+	private Exame exame;
 	
 	public ConsultaExame() {
 	}
 
 	public ConsultaExame(Integer id, LocalDateTime dataHoraExame, String analiseExame, String imagemExame,
-			String status) {
-		super();
+			String status, Consulta consulta, Exame exame) {
 		this.id = id;
 		this.dataHoraExame = dataHoraExame;
 		this.analiseExame = analiseExame;
 		this.imagemExame = imagemExame;
 		this.status = status;
+		this.consulta = consulta;
+		this.exame = exame;
 	}
 
 	public Integer getId() {
@@ -61,6 +64,22 @@ public class ConsultaExame {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public Consulta getConsulta() {
+		return consulta;
+	}
+
+	public void setConsulta(Consulta consulta) {
+		this.consulta = consulta;
+	}
+
+	public Exame getExame() {
+		return exame;
+	}
+
+	public void setExame(Exame exame) {
+		this.exame = exame;
 	}
 	
 }

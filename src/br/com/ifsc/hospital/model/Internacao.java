@@ -9,15 +9,17 @@ public class Internacao {
 	private LocalDateTime dataHoraAlta;
 	private String observacao;
 	private String status;
+	private Consulta consulta;
 	
 	public Internacao(Integer id, LocalDateTime dataHoraInternacao, LocalDateTime dataHoraAlta, String observacao,
-			String status) {
+			String status, Consulta consulta) {
 		super();
 		this.id = id;
 		this.dataHoraInternacao = dataHoraInternacao;
 		this.dataHoraAlta = dataHoraAlta;
 		this.observacao = observacao;
 		this.status = status;
+		this.consulta = consulta;
 	}
 	
 	public Internacao() {
@@ -54,6 +56,11 @@ public class Internacao {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+	public Consulta getConsulta() {
+		return consulta;
+	}
+	public void setConsulta(Consulta consulta) {
+		this.consulta = consulta;
+	}
 	
 }

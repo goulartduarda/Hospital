@@ -18,13 +18,17 @@ public class Atendimento {
 	private String classificacao;
 	private String observacoes;
 	private String status;
+	private Paciente paciente;
+	private Usuario usuario;
+	private Enfermeiro enfermeiro;
 	
 	public Atendimento() {
 	}
 
 	public Atendimento(Integer id, LocalDateTime dataHoraAtendimento, String pressao, String temperatura, String bpm,
 			String oximetria, String historicoDeDoencas, String alergias, String medicacoesEmUso, String anamnese,
-			String tipoAtendimento, String classificacao, String observacoes, String status) {
+			String tipoAtendimento, String classificacao, String observacoes, String status, Paciente paciente,
+			Usuario usuario, Enfermeiro enfermeiro) {
 		super();
 		this.id = id;
 		this.dataHoraAtendimento = dataHoraAtendimento;
@@ -40,8 +44,12 @@ public class Atendimento {
 		this.classificacao = classificacao;
 		this.observacoes = observacoes;
 		this.status = status;
+		this.paciente = paciente;
+		this.usuario = usuario;
+		this.enfermeiro = enfermeiro;
 	}
-	
+
+
 	public Integer getId() {
 		return id;
 	}
@@ -208,4 +216,32 @@ public class Atendimento {
 		this.status = status;
 	}
 
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+
+	public Enfermeiro getEnfermeiro() {
+		return enfermeiro;
+	}
+
+
+	public void setEnfermeiro(Enfermeiro enfermeiro) {
+		this.enfermeiro = enfermeiro;
+	}
 }

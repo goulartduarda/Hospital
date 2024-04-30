@@ -10,12 +10,17 @@ public class MovimentoMedicamento {
 	private float qtdMedicamento;
 	private String observacao;
 	private String status;
+	private Lote lote;
+	private Laboratorio laboratorio;
+	private ReceitaMedicamento receitaMedicamento;
+	private Prontuario prontuario;
 	
 	public MovimentoMedicamento() {
 	}
 
 	public MovimentoMedicamento(Integer id, LocalDateTime dataHoraMovimento, String tipoMovimento, float qtdMedicamento,
-			String observacao, String status) {
+			String observacao, String status, Lote lote, Laboratorio laboratorio,
+			ReceitaMedicamento receitaMedicamento, Prontuario prontuario) {
 		super();
 		this.id = id;
 		this.dataHoraMovimento = dataHoraMovimento;
@@ -23,6 +28,10 @@ public class MovimentoMedicamento {
 		this.qtdMedicamento = qtdMedicamento;
 		this.observacao = observacao;
 		this.status = status;
+		this.lote = lote;
+		this.laboratorio = laboratorio;
+		this.receitaMedicamento = receitaMedicamento;
+		this.prontuario = prontuario;
 	}
 
 	public Integer getId() {
@@ -72,5 +81,36 @@ public class MovimentoMedicamento {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+
+	public Lote getLote() {
+		return lote;
+	}
+
+	public void setLote(Lote lote) {
+		this.lote = lote;
+	}
+
+	public Laboratorio getLaboratorio() {
+		return laboratorio;
+	}
+
+	public void setLaboratorio(Laboratorio laboratorio) {
+		this.laboratorio = laboratorio;
+	}
+
+	public ReceitaMedicamento getReceitaMedicamento() {
+		return receitaMedicamento;
+	}
+
+	public void setReceitaMedicamento(ReceitaMedicamento receitaMedicamento) {
+		this.receitaMedicamento = receitaMedicamento;
+	}
+
+	public Prontuario getProntuario() {
+		return prontuario;
+	}
+
+	public void setProntuario(Prontuario prontuario) {
+		this.prontuario = prontuario;
+	}
 }

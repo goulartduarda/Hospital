@@ -12,13 +12,18 @@ public class Consulta {
 	private String prescricao;
 	private String observacao;
 	private String status;
-	
+	private Medico medico;
+	private Atendimento atendimento;
+	private Receita receita;
+	private Internacao internacao;
+
 	public Consulta() {
 
 	}
 
 	public Consulta(Integer id, String responsavel, LocalDateTime dataHoraConsulta, String anamnese, String diagnostico,
-			String prescricao, String observacao, String status) {
+			String prescricao, String observacao, String status, Medico medico, Atendimento atendimento,
+			Receita receita, Internacao internacao) {
 		super();
 		this.id = id;
 		this.responsavel = responsavel;
@@ -28,8 +33,44 @@ public class Consulta {
 		this.prescricao = prescricao;
 		this.observacao = observacao;
 		this.status = status;
+		this.medico = medico;
+		this.atendimento = atendimento;
+		this.receita = receita;
+		this.internacao = internacao;
 	}
-	
+
+	public Medico getMedico() {
+		return medico;
+	}
+
+	public void setMedico(Medico medico) {
+		this.medico = medico;
+	}
+
+	public Atendimento getAtendimento() {
+		return atendimento;
+	}
+
+	public void setAtendimento(Atendimento atendimento) {
+		this.atendimento = atendimento;
+	}
+
+	public Receita getReceita() {
+		return receita;
+	}
+
+	public void setReceita(Receita receita) {
+		this.receita = receita;
+	}
+
+	public Internacao getInternacao() {
+		return internacao;
+	}
+
+	public void setInternacao(Internacao internacao) {
+		this.internacao = internacao;
+	}
+
 	public Integer getId() {
 		return id;
 	}

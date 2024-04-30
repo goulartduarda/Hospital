@@ -1,5 +1,5 @@
 
-package gehot.model;
+package br.com.ifsc.hospital.model;
 
 
 public class LaboratorioMedicamento {
@@ -7,17 +7,39 @@ public class LaboratorioMedicamento {
     private String codigoBarras;
     private String observacao;
     private String status;
+    private Medicamento medicamento;
+    private Laboratorio laboratorio;
+    
     
     public LaboratorioMedicamento(){
         
     }
 
-    public LaboratorioMedicamento(Integer id, String codigoBarras, String observacao, String status) {
+    public LaboratorioMedicamento(Integer id, String codigoBarras, String observacao, String status, Medicamento medicamento, Laboratorio laboratorio) {
         this.id = id;
         this.codigoBarras = codigoBarras;
         this.observacao = observacao;
         this.status = status;
+        this.medicamento = medicamento;
+        this.laboratorio = laboratorio;
     }
+
+    public Medicamento getMedicamento() {
+        return medicamento;
+    }
+
+    public void setMedicamento(Medicamento medicamento) {
+        this.medicamento = medicamento;
+    }
+
+    public Laboratorio getLaboratorio() {
+        return laboratorio;
+    }
+
+    public void setLaboratorio(Laboratorio laboratorio) {
+        this.laboratorio = laboratorio;
+    }
+    
 
     public Integer getId() {
         return id;

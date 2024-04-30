@@ -1,5 +1,5 @@
 
-package gehot.model;
+package br.com.ifsc.hospital.model;
 
 import java.time.LocalDateTime;
 

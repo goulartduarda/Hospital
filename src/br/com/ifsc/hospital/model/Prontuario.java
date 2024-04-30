@@ -9,15 +9,19 @@ public class Prontuario {
 	private String descricaoVista;
 	private String observacao;
 	private String status;
+	private InternacaoLeito internacaoLeito;
+	private Enfermeiro enfermeiro;
 	
 	public Prontuario(Integer id, LocalDateTime dataHoraVisita, String descricaoVista, String observacao,
-			String status) {
+			String status, InternacaoLeito internacaoLeito, Enfermeiro enfermeiro) {
 		super();
 		this.id = id;
 		this.dataHoraVisita = dataHoraVisita;
 		this.descricaoVista = descricaoVista;
 		this.observacao = observacao;
 		this.status = status;
+		this.internacaoLeito = internacaoLeito;
+		this.enfermeiro = enfermeiro;
 	}
 	
 	public Prontuario() {
@@ -53,6 +57,20 @@ public class Prontuario {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public InternacaoLeito getInternacaoLeito() {
+		return internacaoLeito;
+	}
+	public void setInternacaoLeito(InternacaoLeito internacaoLeito) {
+		this.internacaoLeito = internacaoLeito;
+	}
+
+	public Enfermeiro getEnfermeiro() {
+		return enfermeiro;
+	}
+
+	public void setEnfermeiro(Enfermeiro enfermeiro) {
+		this.enfermeiro = enfermeiro;
 	}
 
 }
