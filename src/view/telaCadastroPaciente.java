@@ -9,12 +9,12 @@ package view;
  *
  * @author aluno
  */
-public class JDialog extends javax.swing.JDialog {
+public class telaCadastroPaciente extends javax.swing.JDialog {
 
     /**
      * Creates new form JDialog
      */
-    public JDialog(java.awt.Frame parent, boolean modal) {
+    public telaCadastroPaciente(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -44,7 +44,7 @@ public class JDialog extends javax.swing.JDialog {
 
         jLabel1Titulo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1Titulo.setText("Titulo");
+        jLabel1Titulo.setText("Cadastro de Paciente ");
         jLabel1Titulo.setToolTipText("");
 
         javax.swing.GroupLayout jPanelTituloLayout = new javax.swing.GroupLayout(jPanelTitulo);
@@ -52,8 +52,8 @@ public class JDialog extends javax.swing.JDialog {
         jPanelTituloLayout.setHorizontalGroup(
             jPanelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelTituloLayout.createSequentialGroup()
-                .addGap(259, 259, 259)
-                .addComponent(jLabel1Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(241, 241, 241)
+                .addComponent(jLabel1Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelTituloLayout.setVerticalGroup(
@@ -223,7 +223,7 @@ public class JDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDialog dialog = new JDialog(new javax.swing.JFrame(), true);
+                telaCadastroPaciente dialog = new telaCadastroPaciente(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
