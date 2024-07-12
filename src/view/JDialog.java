@@ -81,6 +81,7 @@ public class JDialog extends javax.swing.JDialog {
 
         jButton1Novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Create.png"))); // NOI18N
         jButton1Novo.setText("Novo");
+        jButton1Novo.setActionCommand("1");
         jButton1Novo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1NovoActionPerformed(evt);
@@ -89,6 +90,7 @@ public class JDialog extends javax.swing.JDialog {
 
         jButton1Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Cancel.png"))); // NOI18N
         jButton1Cancelar.setText("Cancelar");
+        jButton1Cancelar.setActionCommand("0");
         jButton1Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1CancelarActionPerformed(evt);
@@ -97,6 +99,7 @@ public class JDialog extends javax.swing.JDialog {
 
         jButton1Gravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Download.png"))); // NOI18N
         jButton1Gravar.setText("Gravar");
+        jButton1Gravar.setActionCommand("0");
         jButton1Gravar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1GravarActionPerformed(evt);
@@ -105,9 +108,11 @@ public class JDialog extends javax.swing.JDialog {
 
         jButton1Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Find.png"))); // NOI18N
         jButton1Buscar.setText("Buscar");
+        jButton1Buscar.setActionCommand("1");
 
         jButton1Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Exit.png"))); // NOI18N
         jButton1Sair.setText("Sair");
+        jButton1Sair.setActionCommand("1");
         jButton1Sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1SairActionPerformed(evt);
@@ -173,28 +178,15 @@ public class JDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1NovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1NovoActionPerformed
-        jButton1Novo.setEnabled(false);
-        jButton1Cancelar.setEnabled(true);
-        jButton1Gravar.setEnabled(true);
-        jButton1Buscar.setEnabled(false);
-        jButton1Sair.setEnabled(false);
+        utillities.Utillities.ativaDesativa(true, jPanelBotoes);
     }//GEN-LAST:event_jButton1NovoActionPerformed
 
     private void jButton1CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1CancelarActionPerformed
-        jButton1Novo.setEnabled(true);
-        jButton1Cancelar.setEnabled(false);
-        jButton1Gravar.setEnabled(false);
-        jButton1Buscar.setEnabled(true);
-        jButton1Sair.setEnabled(true);
-        
+      utillities.Utillities.ativaDesativa(false, jPanelBotoes);
     }//GEN-LAST:event_jButton1CancelarActionPerformed
 
     private void jButton1GravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1GravarActionPerformed
-        jButton1Novo.setEnabled(true);
-        jButton1Cancelar.setEnabled(false);
-        jButton1Gravar.setEnabled(false);
-        jButton1Buscar.setEnabled(true);
-        jButton1Sair.setEnabled(true);
+        utillities.Utillities.ativaDesativa(false, jPanelBotoes);
     }//GEN-LAST:event_jButton1GravarActionPerformed
 
     private void jButton1SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1SairActionPerformed
