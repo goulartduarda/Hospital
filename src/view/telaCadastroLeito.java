@@ -72,7 +72,7 @@ public class telaCadastroLeito extends javax.swing.JDialog {
 
         JPanelDados.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1Id.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1Id.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1Id.setText("Id");
 
         jLabel1Descricao.setText("Descriçao");
@@ -107,7 +107,7 @@ public class telaCadastroLeito extends javax.swing.JDialog {
                 .addComponent(jLabel1Id)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1Id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addComponent(jLabel1Descricao)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1Descricao, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)

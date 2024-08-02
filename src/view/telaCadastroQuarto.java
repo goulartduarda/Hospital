@@ -17,6 +17,7 @@ public class telaCadastroQuarto extends javax.swing.JDialog {
     public telaCadastroQuarto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
     }
 
     /**
@@ -72,7 +73,7 @@ public class telaCadastroQuarto extends javax.swing.JDialog {
 
         JPanelDados.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1Id.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1Id.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1Id.setText("Id");
 
         jLabel1Descricao.setText("Descriçao");
@@ -116,7 +117,7 @@ public class telaCadastroQuarto extends javax.swing.JDialog {
                 .addComponent(jLabel1Status)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1Status, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         jPanelBotoes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -133,6 +134,7 @@ public class telaCadastroQuarto extends javax.swing.JDialog {
         jButton1Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Cancel.png"))); // NOI18N
         jButton1Cancelar.setText("Cancelar");
         jButton1Cancelar.setActionCommand("0");
+        jButton1Cancelar.setEnabled(false);
         jButton1Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1CancelarActionPerformed(evt);
@@ -142,6 +144,7 @@ public class telaCadastroQuarto extends javax.swing.JDialog {
         jButton1Gravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Download.png"))); // NOI18N
         jButton1Gravar.setText("Gravar");
         jButton1Gravar.setActionCommand("0");
+        jButton1Gravar.setEnabled(false);
         jButton1Gravar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1GravarActionPerformed(evt);

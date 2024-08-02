@@ -6,7 +6,7 @@ public class Paciente extends Pessoa {
 	private String sexo;
 	private String nomeSocial;
 	
-	public Paciente(String id, String nome, String fone1, String fone2, String email, String cpfCnpj,
+	public Paciente(Integer id, String nome, String fone1, String fone2, String email, String cpfCnpj,
 			String rgInscricaoEstadual, String dataCadastro, String cep, String cidade, String bairro,
 			String logradouro, String complemento, String tipoSanguineo, String sexo, String nomeSocial) {
 		super(id, nome, fone1, fone2, email, cpfCnpj, rgInscricaoEstadual, dataCadastro, cep, cidade, bairro,

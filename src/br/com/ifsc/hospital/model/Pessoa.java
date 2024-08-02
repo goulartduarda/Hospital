@@ -1,7 +1,7 @@
 package br.com.ifsc.hospital.model;
 
 public class Pessoa {
-	private String id;
+	private Integer id;
 	private String nome;
 	private String fone1;
 	private String fone2;
@@ -16,7 +16,7 @@ public class Pessoa {
 	private String complemento;
 	
 	
-	public Pessoa(String id, String nome, String fone1, String fone2, String email, String cpfCnpj,
+	public Pessoa(Integer id, String nome, String fone1, String fone2, String email, String cpfCnpj,
 			String rgInscricaoEstadual, String dataCadastro, String cep, String cidade, String bairro,
 			String logradouro, String complemento) {
 		this.id = id;
@@ -35,12 +35,12 @@ public class Pessoa {
 	}
 
 
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
