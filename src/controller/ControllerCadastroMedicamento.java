@@ -1,6 +1,7 @@
 
 package controller;
 
+import br.com.ifsc.hospital.model.Medicamento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
@@ -30,6 +31,15 @@ public class ControllerCadastroMedicamento implements ActionListener{
         } else if (e.getSource()== this.telaCadastroMedicamento.getjButton1Sair()){
             JOptionPane.showMessageDialog(null, "text text text");
             
+        } else if (e.getSource()== this.telaCadastroMedicamento.getjButton1Gravar()){
+            
+            Medicamento medicamento = new Medicamento();
+            medicamento.setId(Integer.parseInt(this.telaCadastroMedicamento.getjTFId().getText));
+            medicamento.setDescricaoMedicamento(this.telaCadastroMedicamento.getJTFDescricao().getText());
+            br.com.ifsc.hospital.model.ClasseDados.listaMedicamento.add(medicamento);
+            
+        }else if (e.getSource()== this.telaCadastroMedicamento.getjButton1Buscar()){
+            JOptionPane.showMessageDialog(null, br.com.ifsc.hospital.model.ClasseDados.listaMedicamento.toString());
         }
         
     }
