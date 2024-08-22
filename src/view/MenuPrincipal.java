@@ -6,7 +6,9 @@
 package view;
 
 import controller.ControllerCadastroMedicamento;
-import javax.management.modelmbean.ModelMBean;
+import br.com.ifsc.hospital.model.ClasseDados;
+
+import controller.ControllerCadastroMedicamento;
 
 /**
  *
@@ -225,12 +227,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void jMenuItem1MedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1MedicamentoActionPerformed
 
         //Instanciando a tela na memoria -  PROF ROBERVAL ALTEROU
-        TelaCadastroMedicamento telaCadastroMedicamento = new TelaCadastroMedicamento(null, false);
+        TelaCadastroMedicamento telaCadastroMedicamento1 = new TelaCadastroMedicamento(null, false);
         //carregar o controller da tela
-        ControllerCadastroMedicamento controllerCadastroMedicamento = new ControllerCadastroMedicamento(telaCadastroMedicamento);
+        ControllerCadastroMedicamento controllerCadastroMedicamento = new ControllerCadastroMedicamento(telaCadastroMedicamento1);
 
         //disparando a tela para o monitor
-        telaCadastroMedicamento.setVisible(true);
+        telaCadastroMedicamento1.setVisible(true);
     }//GEN-LAST:event_jMenuItem1MedicamentoActionPerformed
 
     private void jButton1NovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1NovoActionPerformed

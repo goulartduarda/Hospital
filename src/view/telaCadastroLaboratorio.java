@@ -5,6 +5,11 @@
  */
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author aluno
@@ -18,6 +23,171 @@ public class telaCadastroLaboratorio extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
     }
+
+    public JLabel getjLabel1Id() {
+        return jLabel1Id;
+    }
+
+    public JPanel getjPanelBotoes() {
+        return jPanelBotoes;
+    }
+
+    public void setjPanelBotoes(JPanel jPanelBotoes) {
+        this.jPanelBotoes = jPanelBotoes;
+    }
+
+    public JPanel getJPanelDados() {
+        return JPanelDados;
+    }
+
+    public void setJPanelDados(JPanel JPanelDados) {
+        this.JPanelDados = JPanelDados;
+    }
+
+    public JButton getjButton1Buscar() {
+        return jButton1Buscar;
+    }
+
+    public void setjButton1Buscar(JButton jButton1Buscar) {
+        this.jButton1Buscar = jButton1Buscar;
+    }
+
+    public JButton getjButton1Cancelar() {
+        return jButton1Cancelar;
+    }
+
+    public void setjButton1Cancelar(JButton jButton1Cancelar) {
+        this.jButton1Cancelar = jButton1Cancelar;
+    }
+
+    public JButton getjButton1Gravar() {
+        return jButton1Gravar;
+    }
+
+    public void setjButton1Gravar(JButton jButton1Gravar) {
+        this.jButton1Gravar = jButton1Gravar;
+    }
+
+    public JButton getjButton1Novo() {
+        return jButton1Novo;
+    }
+
+    public void setjButton1Novo(JButton jButton1Novo) {
+        this.jButton1Novo = jButton1Novo;
+    }
+
+    public JButton getjButton1Sair() {
+        return jButton1Sair;
+    }
+
+    public void setjButton1Sair(JButton jButton1Sair) {
+        this.jButton1Sair = jButton1Sair;
+    }
+
+    public JTextField getjTextField1Bairro() {
+        return jTextField1Bairro;
+    }
+
+    public void setjTextField1Bairro(JTextField jTextField1Bairro) {
+        this.jTextField1Bairro = jTextField1Bairro;
+    }
+
+    public JTextField getjTextField1CEP() {
+        return jTextField1CEP;
+    }
+
+    public void setjTextField1CEP(JTextField jTextField1CEP) {
+        this.jTextField1CEP = jTextField1CEP;
+    }
+
+    public JTextField getjTextField1CNPJ() {
+        return jTextField1CNPJ;
+    }
+
+    public void setjTextField1CNPJ(JTextField jTextField1CNPJ) {
+        this.jTextField1CNPJ = jTextField1CNPJ;
+    }
+
+    public JTextField getjTextField1Cidade() {
+        return jTextField1Cidade;
+    }
+
+    public void setjTextField1Cidade(JTextField jTextField1Cidade) {
+        this.jTextField1Cidade = jTextField1Cidade;
+    }
+
+    public JTextField getjTextField1Complemento() {
+        return jTextField1Complemento;
+    }
+
+    public void setjTextField1Complemento(JTextField jTextField1Complemento) {
+        this.jTextField1Complemento = jTextField1Complemento;
+    }
+
+    public JTextField getjTextField1DataCadastro() {
+        return jTextField1DataCadastro;
+    }
+
+    public void setjTextField1DataCadastro(JTextField jTextField1DataCadastro) {
+        this.jTextField1DataCadastro = jTextField1DataCadastro;
+    }
+
+    public JTextField getjTextField1Email() {
+        return jTextField1Email;
+    }
+
+    public void setjTextField1Email(JTextField jTextField1Email) {
+        this.jTextField1Email = jTextField1Email;
+    }
+
+    public JTextField getjTextField1Fone1() {
+        return jTextField1Fone1;
+    }
+
+    public void setjTextField1Fone1(JTextField jTextField1Fone1) {
+        this.jTextField1Fone1 = jTextField1Fone1;
+    }
+
+    public JTextField getjTextField1Fone2() {
+        return jTextField1Fone2;
+    }
+
+    public void setjTextField1Fone2(JTextField jTextField1Fone2) {
+        this.jTextField1Fone2 = jTextField1Fone2;
+    }
+
+    public JTextField getjTextField1Id() {
+        return jTextField1Id;
+    }
+
+    public void setjTextField1Id(JTextField jTextField1Id) {
+        this.jTextField1Id = jTextField1Id;
+    }
+
+    public JTextField getjTextField1Logradouro() {
+        return jTextField1Logradouro;
+    }
+
+    public void setjTextField1Logradouro(JTextField jTextField1Logradouro) {
+        this.jTextField1Logradouro = jTextField1Logradouro;
+    }
+
+    public JTextField getjTextField1Nome() {
+        return jTextField1Nome;
+    }
+
+    public void setjTextField1Nome(JTextField jTextField1Nome) {
+        this.jTextField1Nome = jTextField1Nome;
+    }
+
+    public JTextField getjTextField1Status() {
+        return jTextField1Status;
+    }
+
+    public void setjTextField1Status(JTextField jTextField1Status) {
+        this.jTextField1Status = jTextField1Status;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -493,4 +663,8 @@ public class telaCadastroLaboratorio extends javax.swing.JDialog {
     private javax.swing.JTextField jTextField1Nome;
     private javax.swing.JTextField jTextField1Status;
     // End of variables declaration//GEN-END:variables
+
+    public Object getNomeField() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
